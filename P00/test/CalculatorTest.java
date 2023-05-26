@@ -1,27 +1,27 @@
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class CalculatorTest {
+class CalculatorTest {
 
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
 	}
 
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
 	}
 
-	@Before
-	public void setUp() throws Exception {
+	@BeforeEach
+	void setUp() throws Exception {
 	}
 
-	@After
-	public void tearDown() throws Exception {
+	@AfterEach
+	void tearDown() throws Exception {
 	}
 
 	@Test
@@ -35,9 +35,8 @@ public class CalculatorTest {
 		int expected = 5555;
 		assertEquals (expected, actual);
 		}
-	
 	@Test
-	public void tesSubtract() {
+	public void testSubtract() {
 		int a = 9876;
 		int b = 4321;
 			
@@ -47,6 +46,6 @@ public class CalculatorTest {
 		int expected = 5555;
 		assertEquals (actual, expected);
 		}
-	
+
 
 }
