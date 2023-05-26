@@ -35,8 +35,9 @@ public class CalculatorTest {
 		int expected = 5555;
 		assertEquals (expected, actual);
 		}
+	
 	@Test
-	public final void testSubtract() {
+	public void tesSubtract() {
 		int a = 9876;
 		int b = 4321;
 			
